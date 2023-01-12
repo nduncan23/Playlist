@@ -15,6 +15,15 @@ public class Song {
         duration=myduration;
         liked=false;
     }
+    public String getName(){
+        return name;
+    }public String getAuthor(){
+        return author;
+    }public int getDuration(){
+        return duration;
+    }public boolean isLiked(){
+        return liked;
+    }
 
 
 

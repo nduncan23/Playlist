@@ -20,7 +20,28 @@ public class Playlist {
       */
     public Playlist(){
         bops= new ArrayList<Song>();
+    }public void addSong(Song hit){
+        bops.add(hit);
+    }public void likeSong(int pos){
+        bops.get(pos).like();
+    }public void removeSong(int pos){
+        bops.remove(pos);
+    }public String examine(){
+        String too="";
+        for(Song s : bops){
+            too+="name= "+s.getName()+"; author= "+s.getAuthor()+"; duration=" +s.getDuration()+"liked=" + s.isLiked() +"\n";
+        }
+    }public String examineLiked(){
+        String too="";
+        for( int i=0; i<bops.size();i++){
+            if(bops.get(i).isLiked()){
+                Song s= bops.get(i);
+                too+="name= "+s.getName()+"; author= "+s.getAuthor()+"; duration=" +s.getDuration()+"liked=" + s.isLiked() +"\n";
+            }
+
+        }
     }
+}
 
       
 

@@ -5,7 +5,16 @@
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
-
+    private String name;
+    private String author;
+    private int duration;
+    private boolean liked;
+    public Song(String mystring, String myauthor, int myduration){
+        name=myname;
+        author=myauthor;
+        duration=myduration;
+        liked=false;
+    }
 
 
 

@@ -23,6 +23,12 @@ public class Song {
         return duration;
     }public boolean isLiked(){
         return liked;
+    }public void like(){
+        if(liked){
+            liked=false;
+        }else{
+            liked=true;
+        }
     }
 
 

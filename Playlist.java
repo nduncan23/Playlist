@@ -40,6 +40,19 @@ public class Playlist {
             }
 
         }
+    }public int totalDuration(){
+        int total=0;
+        for(Song s; bops){
+            total+=s.getDuration();
+        }return total;
+    }public void removeUnliked(){
+        for( int i=0; i<bops.size();i++){
+            if(bops.get(pos).isLiked()=false){
+                bops.remove(pos)
+                i-=1;
+            }
+        }
+
     }
 }
 

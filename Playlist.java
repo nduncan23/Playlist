@@ -30,7 +30,7 @@ public class Playlist {
         String too="";
         for(Song s : bops){
             too+="name= "+s.getName()+"; author= "+s.getAuthor()+"; duration=" +s.getDuration()+"liked=" + s.isLiked() +"\n";
-        }
+        }return too;
     }public String examineLiked(){
         String too="";
         for( int i=0; i<bops.size();i++){
@@ -39,7 +39,7 @@ public class Playlist {
                 too+="name= "+s.getName()+"; author= "+s.getAuthor()+"; duration=" +s.getDuration()+"liked=" + s.isLiked() +"\n";
             }
 
-        }
+        }return too;
     }public int totalDuration(){
         int total=0;
         for(Song s; bops){

@@ -10,15 +10,17 @@ public class PlaylistTester {
     public static void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
         //Make your playlist here
-        Playlist songs=new Playlist;
+        Playlist s=new Playlist();
         System.out.println("Adding songs to the Playlist...\n");
         /**
          * Add some songs here. Note that the format for adding a Song to a Playlist p
          * is something like...
          * p.addSong(new Song(..., ..., ...))
          */
-
-
+        s.add(Song("name1", "author1",60));
+        s.add(Song("name2", "author2",60));
+        s.add(Song("name3", "author3",60));
+        s.add(Song("name1", "author1",60));
 
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
